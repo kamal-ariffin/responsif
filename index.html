@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+
+<body>
+<!-- ini page permulaan -->
+<div data-role="page" id="p1">
+	<div data-role="header" data-position="fixed">
+	<h3>Mula</h3>
+	</div>
+	
+<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">home</button>
+<center>	
+<a href="#" class="ui-btn ui-btn-inline">Teaching</a>
+<button class="ui-btn ui-btn-inline">Research</button>
+<button class="ui-btn ui-btn-inline">Admin</button>
+	<button data-role="none">UG Student</button>
+	<button data-role="none">PG Student</button>
+
+	<form>
+    <input type="button" data-role="none" value="Apply">
+    <input type="submit" data-role="none" value="Submit">
+    <input type="reset" data-role="none" value="Reset">
+</form>
+</center>
+
+<div data-role="collapsible">
+    <h4>Tegasan</h4>
+    <p>Nilai beban yang dikenakan terhadap luas</p>
+</div>
+<div data-role="collapsible">
+    <h4>Terikan</h4>
+    <p>Nilai pemanjangan yang dinisbahkan terhadap panjang asal</p>
+</div>
+<div data-role="collapsible" data-mini="true">
+    <h4>Heading</h4>
+    <ul data-role="listview">
+        <li><a href="#">List item 1</a></li>
+        <li><a href="#">List item 2</a></li>
+        <li><a href="#">List item 3</a></li>
+    </ul>
+</div>
+	<form>
+    <label for="flip-3">Flip toggle switch:</label>
+    <select name="flip-3" id="flip-3" data-role="flipswitch" data-mini="true">
+        <option value="off">Off</option>
+        <option value="on">On</option>
+    </select>
+</form>
+
+
+
+
+
+	<div role="main" class="ui-content">
+	<h3>Introduction</h3>
+		<!-- row 1 -->
+		<div class="ui-grid-a ui-responsive">
+		<div class="ui-block-a">
+		<center><img src="figure/pokok.jpg" /></center>
+		</div>
+		
+		<div class="ui-block-b">
+		<p>
+		Ahmad Kamal Ariffin is a Professor at the Department of Mechanical and Materials Engineering, UKM.  He graduated with a Bachelor in Mechanical Engineering from UKM in 1990.  He then worked as an engineer before joining the Dept. of Mechanical and Materials Engineering, UKM and continued his studies in 1992.  End of 1995, he received his PhD from University of Wales Swansea under the Mechanical Engineering Department and Institute of Numerical Methods in Engineering.  Dr. Ahmad Kamal Ariffin teaches Mechanics of Materials, Computational Methods in Engineering and Finite Element Methods.  
+		</p>
+		</div>
+		</div>
+		<!-- row 2 -->
+		
+		<div class="ui-grid-a ui-responsive">
+	
+		<div class="ui-block-a">
+		<p>
+		His specialty is in computational method in engineering under the area of powder mechanics, fracture mechanics, friction, corrosion, finite element/discrete element and parallels computations.   He is a Fellow of the Institute of Materials Malaysia, founder of Malaysian Association of Computational Mechanics and also member of International Association of Computational Mechanics (IACM).
+		</p>
+		</div>
+				
+		<div class="ui-block-b">
+		<center><img src="figure/sibuk.jpg" /></center>
+		</div>
+		
+		</div>
+			
+	<p>
+	Outside of university enjoys reading and flying rc helicopters.
+	</p>
+	<a href="#p2" class="ui-btn" data-transition="slide"> ke page 2</a>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul>
+                <li><a data-icon="grid" class="ui-btn-active 
+				ui-state-persist">Utama</a></li>
+                <li><a href="#p2" data-icon="star">Isi</a></li>
+                <li><a href="#p3" data-icon="gear"class="ui-btn-active 
+				ui-state-persist">Hubungi</a></li>
+            </ul>
+        </div>
+
+	<h3>Tamat</h3>
+	</div>
+	
+	
+	
+	</div>
+
+<!-- ini page kedua -->
+<div data-role="page" id="p2">
+
+
+	<div data-role="header" data-position="fixed">
+	<a href="#panel1" data-icon="bars" data-iconpos="notext">Panel</a>
+	<h3>Mula muka 2</h3> 
+	</div>
+<!--	<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">home</button> -->
+	<div role="main" class="ui-content">
+	
+	<div data-role="panel" data-display="overlay" id="panel1">
+<h3>Kandungan</h3>
+
+<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+    <h4>Pantulan cahaya</h4>
+    <ul data-role="listview" data-inset="false">
+        <li><a href="pengenalan.html" data-transition="pop">1 Pengenalan</a></li>
+        <li>2 Peraturan</li>
+        <li>3 Kedudukan</li>
+    </ul>
+</div>
+
+</div>
+	
+	
+	<h3>Introduction</h3>
+	
+	<ul data-role="listview" data-inset="true"> 
+    <li>Problem</li>
+    <li>Schematic diagram</li>
+    <li>Mathematical model</li>
+    <li>Finite element analysis</li>
+    <li>Solution</li>
+	<li>Interpretations</li>
+	</ul>
+	
+	<p>
+	Undergraduate 
+	Computational Methods
+	Finite Element Methods
+	Mechanics of Materials
+	</p>
+	Postgraduate 
+	Advanced Computational Methods in Engineering
+	Nanomaterials and nanomechanics
+	Probabilistic Structural Mechanics
+	Islam and Engineering
+	<p>
+	Theses/Dissertations [Ph.D, M.Sc, B.Eng.] |more|
+
+	</p>
+		<a href="#p1" class="ui-btn" data-transition="slide" data-direction="reverse"> ke page 1</a>
+	</div>
+		
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul>
+                <li><a href="#p1" data-icon="grid">Utama</a></li>
+                <li><a data-icon="star" class="ui-btn-active 
+				ui-state-persist" >Isi</a></li>
+                <li><a href="#p3" data-icon="gear">Hubungi</a></li>
+            </ul>
+        </div>
+
+	<h3>Tamat</h3>
+	</div>
+		
+	
+	</div>
+
+<!-- ini page ketiga -->
+<div data-role="page" id="p3">
+	<div data-role="header" data-position="fixed">
+	<h3>Mula muka 3</h3>
+	</div>
+		
+	<div role="main" class="ui-content">
+	<h3>Pengenalan muka 3</h3>
+	<p> Ini isi </p>
+	
+		<a href="#p1" class="ui-btn" data-transition="slide" data-direction="reverse"> ke page 1</a>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul>
+                <li><a href="#p1" data-icon="grid">Utama</a></li>
+                <li><a href="#p2" data-icon="star">Isi</a></li>
+                <li><a href="#" data-icon="gear"class="ui-btn-active 
+				ui-state-persist">Hubungi</a></li>
+            </ul>
+        </div>
+
+	<h3>Tamat</h3>
+	</div>
+</div>
+
+
+</body>
+</html>
+
